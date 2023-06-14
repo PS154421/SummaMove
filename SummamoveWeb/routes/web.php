@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BeheerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('oefeningen.index', BeheerController::class);
+
+    Route::resource('oefeningen', BeheerController::class);
 });

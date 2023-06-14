@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\odel;
+use App\Models\Oefening;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class BeheerController extends Controller
 {
@@ -12,7 +13,9 @@ class BeheerController extends Controller
      */
     public function index()
     {
-        //
+        $oefeningen = Oefening::All();
+
+        return view("oefeningen.index", ['oefeningen' => $oefeningen]);
     }
 
     /**
@@ -34,7 +37,7 @@ class BeheerController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(odel $odel)
+    public function show(Oefening $odel)
     {
         //
     }
@@ -42,7 +45,7 @@ class BeheerController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(odel $odel)
+    public function edit(Oefening $odel)
     {
         //
     }
@@ -50,7 +53,7 @@ class BeheerController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, odel $odel)
+    public function update(Request $request, Oefening $odel)
     {
         //
     }
@@ -58,7 +61,7 @@ class BeheerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(odel $odel)
+    public function destroy(Oefening $odel)
     {
         //
     }
