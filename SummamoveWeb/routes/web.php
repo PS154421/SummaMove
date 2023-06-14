@@ -14,8 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('oefeningen.index', BeheerController::class);
 
-    Route::resource('oefeningen', BeheerController::class);
-});
+Route::resource('oefeningen', BeheerController::class);

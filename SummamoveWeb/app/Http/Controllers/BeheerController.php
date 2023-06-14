@@ -13,9 +13,9 @@ class BeheerController extends Controller
      */
     public function index()
     {
-        $oefeningen = Oefening::All();
+       
 
-        return view("oefeningen.index", ['oefeningen' => $oefeningen]);
+        return view("oefeningen.index", ['oefeningen' => Oefening::All()]);
     }
 
     /**
