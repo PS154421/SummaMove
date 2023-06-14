@@ -29,7 +29,7 @@ Widget build(BuildContext context) {
     body: pages[currentIndex],
     bottomNavigationBar: BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.indigo[300],
       onTap: onTap,
       currentIndex: currentIndex,
       selectedItemColor: Colors.black54,
