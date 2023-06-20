@@ -16,43 +16,58 @@ class OefeningenSeeder extends Seeder
         $data = [
             [
                 'naam' => 'Squat',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Steek je armen vooruit, buig je knieën en duw je billen naar achter. 
+                 Probeer je knieën in een hoek van 90 graden te houden. Ga daarna naar boven en herhaal deze oefening.',
             ],
             [
                 'naam' => 'Push-up',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Ga zo liggen dat alleen je tenen en handen de grond raken.
+                 Ga met je lichaam naar beneden tot je borst de grond raakt.
+                 Beweeg je lichaam daarna weer omhoog.
+                 Herhaal dit proces.',
             ],
             [
                 'naam' => 'Dip',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Ga ergens aan hangen.
+                 Strek je armen en laat je benen achter je hangen.',
             ],
             [
                 'naam' => 'Plank',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Ga liggen met je tenen en onderarmen op de grond
+                 Hou deze positie aan voor de hoeveelheid seconde die jij wilt seconden.',
             ],
             [
                 'naam' => 'Paardentrap',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Ga liggen met je ellebogen en knieën op de grond.
+                 Strek je rechterbeen naar achter.
+                 Hou dit vast voor een paar seconde doe daaraan je been terug.
+                 Doe dit proces om en om met je linkerbeen.',
             ],
             [
                 'naam' => 'Mountain climber',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Zet jezelf in een push-up positie.
+                 Haal een van je benen naar de tegenovergestelde arm.
+                 Verander van links naar rechts.
+                 Herhaal dit proces.',
             ],
             [
                 'naam' => 'Burpee',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Buk voor over richting push-up positie.
+                 Doe een push-up en sta zo snel mogelijk weer op en strek jezelf uit en herhaal dit proces.',
             ],
             [
                 'naam' => 'Lunge',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Stap met een van je voeten uit, hou dit een paar seconde vast.
+                 Stap met je andere voet bij en herhaal dit proces.',
             ],
             [
                 'naam' => 'Wall sit',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Ga met je rug tegen de muur zitten, hou een hoek van 90 graden bij je benen.
+                 Hou deze positie voor een paar seconde vol.',
             ],
             [
                 'naam' => 'Crunch',
-                'beschrijving' => 'nog niet bekend',
+                'beschrijving' => 'Doe een sit up. Hou deze houding de hele oefening vol, maar dan met je armen in je nek.',
             ]
         ];
         DB::table('oefeningen')->insert($data);
